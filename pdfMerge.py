@@ -1,7 +1,12 @@
 # Alain B. Gumarang II
-# PDF Merger Project 
-# (based on "3 PYTHON AUTOMATION PROJECTS FOR BEGINNERS" by Internet Made Coder)
+# PDF Merger Project
+# Based on "3 PYTHON AUTOMATION PROJECTS FOR BEGINNERS" by Internet Made Coder
 # https://youtu.be/vEQ8CXFWLZU?si=GSU_BR4ldmIDsWEj
+# 
+# Requirements:
+#   - Install PyPDF2 using 'pip install PyPDF2'
+#
+# Syntax for code execution: python pdfmerge.py [newMergedFile]
 
 import PyPDF2
 from sys import argv
