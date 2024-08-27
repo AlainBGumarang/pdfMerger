@@ -9,10 +9,16 @@ import os
 
 mergeFile = PyPDF2.PdfMerger()
 mergeFilename = argv[1]
+num = 0
 
 # Merges the documents in order they appear in File Explorer.
 for pdf in os.listdir(os.curdir):
     if pdf.endswith(".pdf"):
         mergeFile.append(pdf)
+        num = num + 1
 
-mergeFile.write(mergeFilename)
+if num > 0:
+    mergeFile.write(mergeFilename)
+    print("\nDocuments merged.\n")
+else:
+    print("\nNo PDF Documents to merge\n")
