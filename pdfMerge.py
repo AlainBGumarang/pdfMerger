@@ -8,7 +8,7 @@ from sys import argv
 import os
 
 mergeFile = PyPDF2.PdfMerger()
-mergeFilename = argv[1]
+mergeFilename = argv[1] + ".pdf"
 num = 0
 
 # Merges the documents in order they appear in File Explorer.
